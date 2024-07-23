@@ -1,0 +1,20 @@
+name: setup
+
+on: [push]
+
+jobs:
+  lets_setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run setup
+      uses: actions/checkout@v3
+      uses: actions/setup-node@v3
+      run: make setup
+      run: make start
+
+      - name: Run tests
+      run: make test
+
+      - name: Run lint
+      run: make lint
+
