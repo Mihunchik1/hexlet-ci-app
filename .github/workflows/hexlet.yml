@@ -3,7 +3,9 @@ name: setup
 on: [push]
 
 jobs:
+
   lets_setup:
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
