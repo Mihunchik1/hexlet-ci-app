@@ -6,10 +6,16 @@ jobs:
   lets_setup:
     runs-on: ubuntu-latest
     steps:
-      - name: Run setup
+      - name: Checkout code
       uses: actions/checkout@v3
+
+      - name: Setup node
       uses: actions/setup-node@v3
+
+      - name:Run setup
       run: make setup
+
+      - name: Start
       run: make start
 
       - name: Run tests
