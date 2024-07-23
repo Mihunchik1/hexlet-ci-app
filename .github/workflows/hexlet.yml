@@ -12,7 +12,7 @@ jobs:
       - name: Setup node
       uses: actions/setup-node@v3
 
-      - name:Run setup
+      - name: Run setup
       run: make setup
 
       - name: Start
