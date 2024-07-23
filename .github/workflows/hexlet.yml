@@ -11,26 +11,20 @@ jobs:
     steps:
 
       - name: Checkout code
-
-      uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Setup node
-
-      uses: actions/setup-node@v3
+        uses: actions/setup-node@v3
 
       - name: Run setup
-
-      run: make setup
+        run: make setup
 
       - name: Start
-
-      run: make start
+        run: make start
 
       - name: Run tests
-
-      run: make test
+        run: make test
 
       - name: Run lint
-
-      run: make lint
+        run: make lint
 
